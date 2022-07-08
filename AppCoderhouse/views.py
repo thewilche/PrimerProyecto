@@ -5,7 +5,7 @@ from AppCoderhouse.models import Curso, Familia
 import datetime
 
 def mama(self):
-    mama=Familia(nombre='Cristina', apellido='Kirchner', anio_de_nacimiento=str(int(datetime.datetime.now().year)-int(44)), edad=44)
+    mama=Familia(nombre='Marcela', apellido='Genes', anio_de_nacimiento=str(int(datetime.datetime.now().year)-int(44)), edad=44)
     mama.save()
     texto=f'Me llamo {mama.nombre} {mama.apellido}, tengo {mama.edad} y nací en el {mama.anio_de_nacimiento}.'
     return HttpResponse(texto)
@@ -13,7 +13,7 @@ def mama(self):
 def papa(self):
     papa=Familia(nombre='Ivan', apellido='Wilchepol', anio_de_nacimiento=str(int(datetime.datetime.now().year)-int(48)), edad=48)
     papa.save()
-    texto=f'Me llamo{papa.nombre} {papa.apellido}, tengo {papa.edad} y nací en el {papa.anio_de_nacimiento}.'
+    texto=f'Me llamo {papa.nombre} {papa.apellido}, tengo {papa.edad} y nací en el {papa.anio_de_nacimiento}.'
     return HttpResponse(texto)
 
 def abuelo(self):
