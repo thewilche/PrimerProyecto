@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=50)),
                 ('apellido', models.CharField(max_length=50)),
-                ('anio_de_nacimiento', models.IntegerField()),
+                ('fecha_de_nacimiento', models.IntegerField()),
                 ('edad', models.IntegerField()),
             ],
         ),

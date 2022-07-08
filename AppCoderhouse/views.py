@@ -1,25 +1,25 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Context, Template, loader
-from AppCoderhouse.models import Curso, Familia
+from AppCoderhouse.models import Familia
 import datetime
 
 def mama(self):
     mama=Familia(nombre='Marcela', apellido='Genes', fecha_de_nacimiento=str(int(datetime.datetime.now().year)-int(44)), edad=44)
-    mama.save()
+    
     texto=f'Me llamo {mama.nombre} {mama.apellido}, tengo {mama.edad} y nací en el {mama.fecha_de_nacimiento}.'
     return HttpResponse(texto)
 
 def papa(self):
     papa=Familia(nombre='Ivan', apellido='Wilchepol', fecha_de_nacimiento=str(int(datetime.datetime.now().year)-int(48)), edad=48)
-    papa.save()
+    
     texto=f'Me llamo {papa.nombre} {papa.apellido}, tengo {papa.edad} y nací en el {papa.fecha_de_nacimiento}.'
     return HttpResponse(texto)
 
 def abuelo(self):
     abuelo=Familia(nombre='Jorge', apellido='Wilchepol', fecha_de_nacimiento=str(int(datetime.datetime.now().year)-int(77)), edad=77)
-    abuelo.save()
-    texto=f'Me llamo{abuelo.nombre} {abuelo.apellido}, tengo {abuelo.edad} y nací en el {abuelo.fecha_de_nacimiento}.'
+    
+    texto=f'Me llamo {abuelo.nombre} {abuelo.apellido}, tengo {abuelo.edad} y nací en el {abuelo.fecha_de_nacimiento}.'
     return HttpResponse(texto)
 
 def probandoHTML(self):
