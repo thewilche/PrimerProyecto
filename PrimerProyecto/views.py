@@ -34,8 +34,9 @@ def probandoTemplate(self):
 
     nom= 'Agustin'
     ape= 'Wilchepol'
-    notas=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    diccionario={'nombre':nom,'apellido':ape,'lista':notas}
+    ed=20
+    naci=2002
+    diccionario={'nombre':nom,'apellido':ape,'edad':ed,'nacimiento':naci}
 
     plantilla=Template(miArchivo.read())
     miArchivo.close()
